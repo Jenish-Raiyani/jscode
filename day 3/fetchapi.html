@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+   <script>
+
+
+
+
+    /*
+    //get data
+    fetch('https://api.github.com/orgs/nodejs')
+    
+    .then(response => response.json())
+    .then(data => {
+      console.log(data) // Prints result from `response.json()` in getRequest
+    })
+    .catch(error => console.error(error))*/
+
+/*
+    //post data
+    let stlist={
+        fname:'jenish',
+        lname:'raiyani',
+        city:'jnd'
+    };
+
+    const options={
+        method:'post',
+        body:JSON.stringify(stlist),
+        headers: {
+            'Content-Type': 'application/json'
+       }
+    }
+    console.log(options);
+    fetch('https://reqres.in/api/users', options)
+   .then(res => res.json())
+   .then(res => console.log(res));*/
+
+   function getData(){
+       url="https://api.github.com/users";
+       fetch(url).then((response)=>{
+           return response.json();
+       }).then((data)=>{
+           console.log(data);
+
+
+       })
+   }
+   getData();
+   postData();
+
+
+   function postData(){
+       url="http://dummy.restapiexample.com/api/v1/create";
+       data='{"name":"3456jk","salart":"22","age":"23"}';
+
+       params={
+           method:"post",
+           headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+        
+       }
+       fetch(url, params).then(response=> response.json())
+    .then(data => console.log(data)
+    )
+   }
+   </script>
+    
+</body>
+</html>

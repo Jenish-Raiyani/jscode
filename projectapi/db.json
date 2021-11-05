@@ -1,0 +1,21 @@
+{
+  "project": [
+    {
+      "id": 0,
+      "title": "Parity Checker",
+      "domain": "Mobile App",
+      "category": "Software",
+      "technology": "Java",
+      "description": "lorem"
+    },
+    {
+      "id": 1,
+      "title": "Parity Checker",
+      "domain": "Mobile App",
+      "category": "Software",
+      "technology": "Java",
+      "description": "lorem"
+    }
+  ]
+  
+}
